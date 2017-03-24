@@ -18,13 +18,12 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 1;font-family: 'Lato', sans-serif;;
 }
 ol, ul {
 	list-style: none;
@@ -41,8 +40,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
-.contenedor{width: 1024px; height: 766px;margin:0 auto;border:1px solid #333;}
+.contenedor{width: 1024px; height: 768px;margin:0 auto;background: url('../img/footer.png');}
 .logo {font-family: Arial, helvetica-neue; text-align: right;font-size: 24px;    border-bottom: 2px solid #8a8a8a;
     padding-bottom: 20px;}
 .logo h1{font-weight: lighter;text-transform: uppercase;color: #8a8a8a;}
@@ -50,6 +48,55 @@ table {
 .gris{color:#8a8a8a;}
 .logo_negrita{color:#000000;font-weight:700;}
 header{padding: 20px 40px;}
-nav ul li {background: #8a8a8a;color: #ffffff;float: left; width: 100px; font-size: 17px; text-align: center;padding: 10px;height: 40px;vertical-align: middle;margin-right:5px;font-family: Arial;line-height: 40px; }
-nav ul li:nth-child(1), nav ul li:nth-child(2) {line-height: 1.2;}
+nav ul li {background: #8a8a8a;color: #ffffff;float: left; width: 100px; font-size: 17px; text-align: center;padding: 10px;height: 30px;vertical-align: middle;margin-right:5px;line-height: 30px; }
+nav ul li a {text-decoration: none;color: #ffffff;}
+nav ul li:nth-child(1), nav ul li:nth-child(2) {line-height: 0.9;}
 nav ul li:nth-child(2n+1){background: #471751;}
+.main_content {
+	padding: 40px;
+}
+.pasa_tarjeta{width: 680px; margin: 0 auto;}
+.triangulor {
+     width: 0; 
+     height: 0; 
+     border-left: 30px solid #b31200;
+     border-top: 15px solid transparent;
+     border-bottom: 15px solid transparent;
+     float: left;
+} /*https://cybmeta.com/formas-basicas-con-css-triangulos-circulos-trapecios-rectangulos-cuadrados*/
+.triangulog {
+     width: 0; 
+     height: 0; 
+     border-left: 30px solid #a0a0a2;
+     border-top: 15px solid transparent;
+     border-bottom: 15px solid transparent;
+     float: left;
+}
+h2.opt{
+	text-transform: uppercase;
+    font-size: 25px;
+    margin-left: 46px;
+}
+.opts{color:;}
+.opciones{width: 60%;}
+.desliza{width: 40%;}
+.table{display: table;height: 565px;}
+.centrar{display: table-cell;vertical-align: middle;}
+.txt{margin-bottom: 130px;}
+.txt p {    margin-left: 48px;
+    margin-top: 24px;
+    font-size: 20px;
+    color: #3f3f3f;}
+.btn_grey{
+	padding: 10px 50px;
+	color: #ffffff;
+	margin-left: 18px;
+	margin-top: 20px;
+background: rgb(76,76,76); /* Old browsers */
+background: -moz-linear-gradient(-45deg, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(102,102,102,1) 25%, rgba(71,71,71,1) 39%, rgba(44,44,44,1) 50%, rgba(0,0,0,1) 51%, rgba(17,17,17,1) 60%, rgba(43,43,43,1) 76%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, rgba(76,76,76,1) 0%,rgba(89,89,89,1) 12%,rgba(102,102,102,1) 25%,rgba(71,71,71,1) 39%,rgba(44,44,44,1) 50%,rgba(0,0,0,1) 51%,rgba(17,17,17,1) 60%,rgba(43,43,43,1) 76%,rgba(28,28,28,1) 91%,rgba(19,19,19,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, rgba(76,76,76,1) 0%,rgba(89,89,89,1) 12%,rgba(102,102,102,1) 25%,rgba(71,71,71,1) 39%,rgba(44,44,44,1) 50%,rgba(0,0,0,1) 51%,rgba(17,17,17,1) 60%,rgba(43,43,43,1) 76%,rgba(28,28,28,1) 91%,rgba(19,19,19,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+border: none;
+border-radius: 10px;
+}
