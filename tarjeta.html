@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Ripleymatico</title>	
-	<link rel="stylesheet" href="css/animate.css">
+	<title>Ripleymatico</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
 </head>
@@ -28,29 +27,38 @@
 				<div class="pasa_tarjeta">
 					<div class="table">
 						<div class="centrar">
-							<div class="m17"></div>
-							<div class="opciones">
-								<div class="txt">
-									<div class="header_opt">
-										<div class="triangulor"></div>
-										<h2 class="opt"> Con Tarjeta</h2>
+							<div class="cont_tarjetas">
+								<div class="">
+									<div class="header_tar">
+										<div class="triangulor_opt"></div>
+										<h2 class="opt"> Selecciona el tipo de tarjeta</h2>
 									</div>
-									<p>Desliza tu tajeta Ripley crédito o débito por la ranura para que puedas ingresar.</p>
 								</div>
-								<div>
-									<div class="header_opt">
-										<div class="triangulog"></div>
-										<h2 class="opt gris">Otro Documento</h2>
-										<a href="otro_doc.html"><button class="btn btn_grey btn_grey_live">Click Aquí</button></a>
-									</div>
-									
+								<div class="tipo_tarjeta">
+									<form action="">
+										<label>
+										  <input type="radio" name="tarjeta" value="small" />
+										  <img src="img/ripley-simple.png">
+										</label>
+										<label>
+										  <input type="radio" name="tarjeta" value="small" />
+										  <img src="img/ripley_mastercard.png">
+										</label>
+										<label>
+										  <input type="radio" name="tarjeta" value="small" />
+										  <img src="img/ripley-visa-azul.png">
+										</label>
+										<label>
+										  <input type="radio" name="tarjeta" value="small" />
+										  <img src="img/ripley_mastercard_amarillo.png">
+										</label>
+										<label>
+										  <input type="radio" name="tarjeta" value="small" />
+										  <img src="img/ripley-visa-plomo.png">
+										</label>
+
+									</form>
 								</div>
-							</div>
-							<div class="desliza">								
-								<img src="img/ranura2-tarjeta.png" alt="Cargando Imagen..." class="ranura fondo_ranura" width="11.25">
-								<img src="img/tarjeta-ripley.png" alt="Cargando Imagen..." class="ranura tarjeta" width="140">
-								<img src="img/ranura1-tarjeta.png" alt="Cargando Imagen..." class="ranura" width="40">
-								<img src="img/flecha.png" alt="Cargando Imagen..." class="flecha">
 							</div>
 						</div>
 					</div>
@@ -84,23 +92,9 @@
 		    }
 			loopDown();
 
-			$('img').click(function(event) {
-				
-					window.location.href = 'pin.html';
-				
+			$('label').click(function(event) {
+				window.location.href = 'ul_4_tarjeta.html';
 			});
-
-
-			function animar()
-			{
-				if ($('.tarjeta').hasClass('looping')) {
-						$('.tarjeta').removeClass('looping');
-				} else {
-					$('.tarjeta').addClass('looping');
-				}
-			}
-			setInterval(animar, 10000);
-
 		});
 
 
